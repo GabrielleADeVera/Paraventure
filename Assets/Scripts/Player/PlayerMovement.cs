@@ -2,17 +2,30 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-	public float speed = 2f;  // The speed that the player will move at.
-	public float maxJumpHeight = 6f;
+	public float speed = 2f;  			// The speed that the player will move at.
+//	public float maxJumpHeight = 6f;
 	public float jumpVelocity = 6f;
+	public bool isGrounded = true;
 	Vector3 movement;                   // The vector to store the direction of the player's movement.
 	Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
+//	CapsuleCollider playerCollider;
 
 	void Awake ()
 	{
 		playerRigidbody = GetComponent <Rigidbody> ();
+//		playerCollider = GetComponent<CapsuleCollider> ();
 	}
 
+
+	void OnCollisionStay (Collision collisionInfo)
+	{
+		isGrounded = true;
+	}
+
+	void OnCollisionExit (Collision collisionInfo)
+	{
+		isGrounded = false;
+	}
 
 	void Update ()
 	{
@@ -21,8 +34,10 @@ public class PlayerMovement : MonoBehaviour
 		float moveVertical = Input.GetAxisRaw ("Vertical");
 //		float y = transform.position.y;
 
+		Debug.Log ("Transform tag is " + tag);
 
-		if (Input.GetKeyDown ("space")) {
+
+		if (Input.GetKeyDown ("space") && isGrounded) {
 			print ("space key was pressed");
 			playerRigidbody.velocity = Vector3.up * jumpVelocity;
 		
