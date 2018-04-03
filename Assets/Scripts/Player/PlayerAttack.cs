@@ -6,6 +6,7 @@ public class PlayerAttack : MonoBehaviour {
 
 	public SphereCollider sphereCollider;
 
+
 	// Use this for initialization
 	void Start () {
 		sphereCollider = GetComponent <SphereCollider>();
@@ -13,7 +14,11 @@ public class PlayerAttack : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.CompareTag("Enemy")){
-			Debug.Log ("Kachow");
+			
+			EnemyHealth enemyHealth = other.GetComponent<EnemyHealth> ();
+			enemyHealth.currentHealth -= 7;
+			Debug.Log ("Enemy Health is " + enemyHealth.currentHealth);
+
 			}
 	}
 	// Update is called once per frame
