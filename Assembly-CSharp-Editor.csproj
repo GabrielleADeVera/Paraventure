@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{69099D57-2471-7253-2741-829F106C1129}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Unitycoding\Character System\Scripts\Editor\CharacterInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Character System\Scripts\Editor\CharacterSettingsEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Character System\Scripts\Editor\CharacterSettingsInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Character System\Scripts\Editor\CharacterSystemEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Character System\Scripts\Editor\CharacterSystemMenu.cs" />
+     <Compile Include="Assets\Unitycoding\Character System\Scripts\Editor\EnableCharacterSystemScripting.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ActionBrowser.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ActionEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\AssetCreator.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\BaseBrowser.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\BuiltInResourcesWindow.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ConditionBrowser.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\EnableICodeScripting.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ErrorChecker.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ErrorEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\FsmContent.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\FsmEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\FsmEditorStyles.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\FsmError.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\FsmTool.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\GlobalVariablesEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\HierarchyItem.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ICodeBehaviourInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ICodeMasterInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ICodeMenu.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ICodeTriggerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ListExtensions.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\MainToolbar.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\MonoBehaviourConverter.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\NetworkTriggerEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\NodeEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\NodeInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\OverrideVariablesInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\Pasteboard.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PreferencesEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\ComponentDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\CustomDrawerAttribute.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\FsmBoolDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\FsmPropertyDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\FsmVariableDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\GUIDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\HeaderDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\IndentDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\LayerDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\MethodDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\ParameterTypeDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\PropertyDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\PropertyDrawers\TagDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\RectExtension.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ReorderableList.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ReorderableObjectList.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ReviewReminder\ReviewReminderWindow.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\SetupShortcutsEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ShortcutEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\StateInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\StateMachineInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\TransitionEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\Utility\AttributesUtility.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\Utility\FsmEditorUtility.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\Utility\FsmGUIUtility.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\VariableEditor.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\WelcomeWindow.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Editor\ZoomableArea.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Integrations\Editor\IntegrationWindow.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Integrations\Photon Bolt\Scripts\Editor\BoltCallbackHandlerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\ICode\Scripts\Integrations\Photon Unity Networking\Editor\PrefabCacheEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\EnableItemSystemScripting.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\BaseItemTriggerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\CraftingContainerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\DistanceTriggerHandlerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\EquipmentItemInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\ItemContainerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\ItemInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\ItemSettingsInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\ItemTriggerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\StoreContainerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\Inspectors\UsableItemInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\ItemCollection.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\ItemSettingsEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\ItemSystemEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\ItemSystemMenu.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\PropertyDrawers\CategoryPickerDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\PropertyDrawers\EquipmentPickerDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\PropertyDrawers\ItemPickerDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\PropertyDrawers\PickerDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Editor\PropertyDrawers\RarityPickerDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\Item System\Scripts\Integrations\Editor\IntegrationWindow.cs" />
+     <Compile Include="Assets\Unitycoding\Login System\Scripts\Editor\LoginSettingsEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Login System\Scripts\Editor\LoginSystemEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Login System\Scripts\Editor\LoginSystemMenu.cs" />
+     <Compile Include="Assets\Unitycoding\Proxy\Scripts\Editor\ProxyEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Proxy\Scripts\Editor\ProxyEditorMenu.cs" />
+     <Compile Include="Assets\Unitycoding\Proxy\Scripts\Editor\ProxySettingsInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\AssetCreator.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\BaseSystemEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\CollectionEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\ICollectionEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\Inspectors\CallbackHandlerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\Inspectors\PropertyBindingInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\PlayerPrefsEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\PropertyDrawers\HeaderLineDrawer.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\ReorderableObjectList.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\ScriptableObjectCollection.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\UnityEditorUtility.cs" />
+     <Compile Include="Assets\Unitycoding\Shared\Scripts\Editor\UtilityWindow.cs" />
+     <Compile Include="Assets\Unitycoding\Status\Scripts\Editor\StatusHandlerInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Status\Scripts\Editor\StatusSettingsInspector.cs" />
+     <Compile Include="Assets\Unitycoding\Status\Scripts\Editor\StatusSystemEditor.cs" />
+     <Compile Include="Assets\Unitycoding\Status\Scripts\Editor\StatusSystemMenu.cs" />
+     <Compile Include="Assets\Unitycoding\UI Widgets\Scripts\Editor\UIWidgetEditor.cs" />
+     <Compile Include="Assets\Unitycoding\UI Widgets\Scripts\Editor\UIWidgetInspector.cs" />
+     <None Include="Assets\Unitycoding\ICode\Scripts\Editor\Resources\GridLine.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIAutomation">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Users/gabrielledevera/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Users/gabrielledevera/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/gabrielledevera/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/Users/gabrielledevera/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Users/gabrielledevera/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>/Users/gabrielledevera/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>/Users/gabrielledevera/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{746557A1-6C37-73AA-C0D8-D648010588F9}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
