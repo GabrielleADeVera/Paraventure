@@ -7,14 +7,24 @@ public class EnemyHealth : MonoBehaviour {
 	public float currentHealth;
 	public float startingHealth = 100f;
 
+	public bool inRange; //Each Enemy is able to be in range of the Player
+
 	// Use this for initialization
 	void Start () {
 		currentHealth = startingHealth;
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+
+	void OnTriggerEnter(Collider other){
+		if(other.CompareTag("Player")){
+			inRange = true;
+		}
 	}
+
+	void OnTriggerExit(Collider other){
+		if (other.CompareTag ("Player"))
+			inRange = false;
+	}
+
 }

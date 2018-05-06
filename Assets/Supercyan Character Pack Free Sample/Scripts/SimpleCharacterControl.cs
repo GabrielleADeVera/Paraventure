@@ -34,7 +34,6 @@ public class SimpleCharacterControl : MonoBehaviour {
     private bool m_isGrounded;
     private List<Collider> m_collisions = new List<Collider>();
 
-
     private void OnCollisionEnter(Collision collision)
     {
         ContactPoint[] contactPoints = collision.contacts;
@@ -107,18 +106,6 @@ public class SimpleCharacterControl : MonoBehaviour {
         }
 
         m_wasGrounded = m_isGrounded;
-
-		/*
-		 * Trying to create script to make attack animation
-		 * Attack animation should happen immediately
-		 * Since Update is called for every frame, the code should be here
-		 */
-
-		if (Input.GetMouseButtonDown (0)) {
-			m_animator.SetTrigger ("IsAttacking");
-		}
-
-		
     }
 
     private void TankUpdate()
@@ -145,7 +132,7 @@ public class SimpleCharacterControl : MonoBehaviour {
         m_animator.SetFloat("MoveSpeed", m_currentV);
 
         JumpingAndLanding();
-}
+    }
 
     private void DirectUpdate()
     {
@@ -202,6 +189,4 @@ public class SimpleCharacterControl : MonoBehaviour {
             m_animator.SetTrigger("Jump");
         }
     }
-
-
 }
