@@ -51,6 +51,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUI.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIButton.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIData.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIImage.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUISlider.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIText.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\DontDestroy.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\EventSystemChecker.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\MenuObject.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\MenuSettings.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\Pause.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\PlayMusic.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\QuitApplication.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\SetAudioLevels.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\ShowPanels.cs" />
+     <Compile Include="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -146,6 +162,7 @@
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Game Jam Template\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
@@ -183,8 +200,10 @@
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Game Jam Template\GameJamTemplateReadMe.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Game Jam Template\README.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
