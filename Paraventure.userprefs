@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIImage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs">
     <Files>
-      <File FileName="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" Line="12" Column="25" />
+      <File FileName="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" Line="14" Column="28" />
       <File FileName="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIImage.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
