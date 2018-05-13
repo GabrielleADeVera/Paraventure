@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 	bool doublejumped = false;
 	bool isFalling;
 	bool startFall;
-	float fallingVelocity = -1f;
+//	float fallingVeloci ty = -1f;
 
 
 	//isStrafing/action variables
@@ -50,8 +50,8 @@ public class PlayerMovement : MonoBehaviour
 
 	// Used for continuing momentum while in air
 	public float inAirSpeed = 8f;
-	float maxVelocity = 2f;
-	float minVelocity = -2f;
+//	float maxVelocity = 2f;
+//	float minVelocity = -2f;
 
 	//rolling variables
 	public float rollSpeed = 8;
@@ -64,8 +64,8 @@ public class PlayerMovement : MonoBehaviour
 	public float walkSpeed = 1.35f;
 	float moveSpeed;
 	public float runSpeed = 6f;
-	float rotationSpeed = 40f;
-	Vector3 inputVec;
+//	float rotationSpeed = 40f;
+//	Vector3 inputVec;
 	Vector3 newVelocity;
 
 	//inputs variables
@@ -73,13 +73,13 @@ public class PlayerMovement : MonoBehaviour
 	float inputVertical = 0f;
 	float inputDashVertical = 0f;
 	float inputDashHorizontal = 0f;
-	float inputBlock = 0f;
-	bool inputLightHit;
-	bool inputDeath;
-	bool inputAttackR;
-	bool inputAttackL;
-	bool inputCastL;
-	bool inputCastR;
+//	float inputBlock = 0f;
+//	bool inputLightHit;
+//	bool inputDeath;
+//	bool inputAttackR;
+//	bool inputAttackL;
+//	bool inputCastL;
+//	bool inputCastR;
 	bool inputJump;
 
 	void Start(){
@@ -95,13 +95,13 @@ public class PlayerMovement : MonoBehaviour
 		inputDashVertical = Input.GetAxisRaw("DashVertical");
 		inputHorizontal = Input.GetAxisRaw("Horizontal");
 		inputVertical = Input.GetAxisRaw("Vertical");
-		inputLightHit = Input.GetButtonDown("LightHit");
-		inputDeath = Input.GetButtonDown("Death");
-		inputAttackL = Input.GetButtonDown("AttackL");
-		inputAttackR = Input.GetButtonDown("AttackR");
-		inputCastL = Input.GetButtonDown("CastL");
-		inputCastR = Input.GetButtonDown("CastR");
-		inputBlock = Input.GetAxisRaw("TargetBlock");
+//		inputLightHit = Input.GetButtonDown("LightHit");
+//		inputDeath = Input.GetButtonDown("Death");
+//		inputAttackL = Input.GetButtonDown("AttackL");
+//		inputAttackR = Input.GetButtonDown("AttackR");
+//		inputCastL = Input.GetButtonDown("CastL");
+//		inputCastR = Input.GetButtonDown("CastR");
+//		inputBlock = Input.GetAxisRaw("TargetBlock");
 		inputJump = Input.GetButtonDown("Jump");
 
 	}
@@ -207,7 +207,7 @@ public class PlayerMovement : MonoBehaviour
 		if(!isRolling){
 			targetDashDirection = inputDashHorizontal * right + inputDashVertical * -forward;
 		}
-		inputVec = inputHorizontal * right + inputVertical * forward;
+//		inputVec = inputHorizontal * right + inputVertical * forward;
 	}
 
 //	void Rolling(){

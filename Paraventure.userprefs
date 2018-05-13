@@ -1,26 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-<<<<<<< HEAD
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerAttack.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PlayerAttack.cs" Line="1" Column="1" />
-      <File FileName="Assets/RPG Character Animation Pack/Code/RPGCharacterControllerFREE.cs" Line="1" Column="1" />
-      <File FileName="Assets/Supercyan Character Pack Free Sample/Scripts/SimpleCharacterControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/RPG Character Animation Pack/Code/RPGCharacterGUI.cs" Line="6" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Tyler/collisionTest.cs" Line="69" Column="23" />
+      <File FileName="Assets/Scripts/Tyler/EnemyMove.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerAttack.cs" Line="13" Column="16" />
+      <File FileName="Assets/Supercyan Character Pack Free Sample/Scripts/SimpleCharacterControl.cs" Line="156" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-=======
-  <MonoDevelop.Ide.Workbench />
->>>>>>> 7aba4f226244dac3fbdb75f78d0131ab109cccd4
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIImage.cs">
-    <Files>
-      <File FileName="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" Line="12" Column="25" />
-      <File FileName="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIImage.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
->>>>>>> 882428d56ae6e62fc2b47ab554bad096e105f92e
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

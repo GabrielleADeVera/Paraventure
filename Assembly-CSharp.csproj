@@ -51,22 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUI.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIButton.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIData.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIImage.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUISlider.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\FlexibleUI\FlexibleUIText.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\DontDestroy.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\EventSystemChecker.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\MenuObject.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\MenuSettings.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\Pause.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\PlayMusic.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\QuitApplication.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\SetAudioLevels.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\ShowPanels.cs" />
-     <Compile Include="Assets\Game Jam Template\Scripts\Menu\StartOptions.cs" />
+     <Compile Include="Assets\DungeonModules\Scripts\DoorAOpen.cs" />
+     <Compile Include="Assets\LowPoly Fantasy Monsters Pack Ver1.0_Demo\Environment\Scripts\Move.cs" />
+     <Compile Include="Assets\LowPoly Fantasy Monsters Pack Ver1.0_Demo\Environment\Scripts\PointLight.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -105,17 +92,6 @@
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-     <Compile Include="Assets\rpg animations\scripts\CameraController.cs" />
-     <Compile Include="Assets\rpg animations\scripts\HiderInTime.cs" />
-     <Compile Include="Assets\rpg animations\scripts\HidingMachineBehaviour.cs" />
-     <Compile Include="Assets\rpg animations\scripts\ScrollSwitcher.cs" />
-     <Compile Include="Assets\rpg animations\scripts\UI_no_weapon.cs" />
-     <Compile Include="Assets\rpg animations\scripts\UI_sword.cs" />
-     <Compile Include="Assets\rpg animations\scripts\WeaponHide.cs" />
-     <Compile Include="Assets\rpg animations\scripts\WorldInteraction.cs" />
-     <Compile Include="Assets\RPG Character Animation Pack\Code\CameraController.cs" />
-     <Compile Include="Assets\RPG Character Animation Pack\Code\RPGCharacterControllerFREE.cs" />
-     <Compile Include="Assets\RPG Character Animation Pack\Code\RPGCharacterGUI.cs" />
      <Compile Include="Assets\Scripts\Combat\Attach.cs" />
      <Compile Include="Assets\Scripts\Combat\Hit.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
@@ -124,6 +100,8 @@
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerProximity.cs" />
+     <Compile Include="Assets\Scripts\Tyler\collisionTest.cs" />
+     <Compile Include="Assets\Scripts\Tyler\EnemyMove.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
@@ -153,6 +131,7 @@
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\character setup guide link.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
@@ -162,7 +141,6 @@
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
-     <None Include="Assets\Game Jam Template\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
@@ -200,10 +178,9 @@
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
-     <None Include="Assets\Game Jam Template\GameJamTemplateReadMe.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\LowPoly Fantasy Monsters Pack Ver1.0_Demo\READ ME FIRST!!!\read me.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
-     <None Include="Assets\Game Jam Template\README.txt" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
