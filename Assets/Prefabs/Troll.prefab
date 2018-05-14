@@ -685,7 +685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1696470170143852
 GameObject:
   m_ObjectHideFlags: 1
@@ -1806,11 +1806,10 @@ MonoBehaviour:
   damage: 10
   isInRange: 0
   isDead: 0
-  attackAnimation: attack03
   enemyAnimation: {fileID: 111877730769166608}
   enemyAnimator: {fileID: 95351549637082340}
   moveSpeed: 0
-  isAttacking: 0
+  attackDamage: 10
 --- !u!135 &135431040417485768
 SphereCollider:
   m_ObjectHideFlags: 1

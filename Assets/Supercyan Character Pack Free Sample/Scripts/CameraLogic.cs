@@ -4,9 +4,11 @@ using System.Collections.Generic;
 public class CameraLogic : MonoBehaviour {
 
     private Transform m_currentTarget;
-    private float m_distance = 2f;
-    private float m_height = 1;
+    private float m_distance = 7f;
+    private float m_height = 3;
     private float m_lookAtAroundAngle = 180;
+
+
 
     [SerializeField] private List<Transform> m_targets;
     private int m_currentIndex;
@@ -16,6 +18,7 @@ public class CameraLogic : MonoBehaviour {
         {
             m_currentIndex = 0;
             m_currentTarget = m_targets[m_currentIndex];
+			transform.LookAt(m_currentTarget.transform);
         }
 	}
 
@@ -42,7 +45,7 @@ public class CameraLogic : MonoBehaviour {
         float targetHeight = m_currentTarget.position.y + m_height;
         float currentRotationAngle = m_lookAtAroundAngle;
 
-        Quaternion currentRotation = Quaternion.Euler(0, currentRotationAngle, 0);
+		Quaternion currentRotation = Quaternion.Euler(currentRotationAngle, currentRotationAngle, 0);
 
         Vector3 position = m_currentTarget.position;
         position -= currentRotation * Vector3.forward * m_distance;

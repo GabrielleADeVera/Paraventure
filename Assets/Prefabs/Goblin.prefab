@@ -1649,6 +1649,7 @@ MonoBehaviour:
   enemyAnimation: {fileID: 0}
   enemyAnimator: {fileID: 0}
   moveSpeed: 0
+  attackDamage: 10
 --- !u!135 &135881111020951862
 SphereCollider:
   m_ObjectHideFlags: 1
