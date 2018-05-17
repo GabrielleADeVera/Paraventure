@@ -27,10 +27,16 @@ public class collisionTest : MonoBehaviour {
 
 	public int attackDamage = 10;
 
+	GameObject player;
+	bool playerDied = false;
+
+	AudioSource enemyAudio;
 
 	void Update(){
 		timer += Time.deltaTime;
-
+		if (player.GetComponent<PlayerHealth> ().isDead) {
+			playerDied = true;
+		}
 	}
 
 
@@ -45,12 +51,15 @@ public class collisionTest : MonoBehaviour {
 	{		
 		enemyAnimation = GetComponent<Animation> ();
 		enemyAnimator = GetComponent<Animator> ();
+		enemyAudio = GetComponent<AudioSource> ();
 		if (null != enemyAnimation && enemyAnimation.enabled == true) {
 			hasAniComp = true;
 		} else {
 		
 			hasAniComp = false;
 		}
+		player = GameObject.FindGameObjectWithTag("Player");
+	
 
 
 
@@ -66,7 +75,7 @@ public class collisionTest : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider other){
-		if (timer>=TimeBetweenAttacks&&Time.timeScale!=0&&other.gameObject.tag == "Player"&& currentHealth > 0) {
+		if (timer>=TimeBetweenAttacks&&Time.timeScale!=0&&other.gameObject.tag == "Player"&& currentHealth > 0&&!playerDied) {
 			DealDamage (attackDamage);
 			PlayerHealth playerHealth = other.GetComponent<PlayerHealth> ();
 			playerHealth.TakeDamage (attackDamage);
@@ -157,6 +166,7 @@ public class collisionTest : MonoBehaviour {
 		Debug.Log ("Enemy is dying");
 		isDead = true;
 		enemyAnimator.Play ("dead");
+		enemyAudio.Play ();
 //
 //		if (currentHealth <= 0) {	
 //			if (enemyAnimation != null) {

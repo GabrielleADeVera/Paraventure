@@ -21,12 +21,17 @@ public class PlayerAttack : MonoBehaviour {
 
 	float timer;
 
+	AudioSource combatAudio;
+	public AudioClip swingClip;
+
 
 	// Use this for initialization
 	void Awake () {
 		sphereCollider = GetComponent <SphereCollider>();
 		animator = GetComponent<Animator> ();
 //		meshCollider = GetComponentInChildren<MeshCollider> ();
+		combatAudio = GetComponent<AudioSource> ();
+
 	}
 
 	void OnTriggerStay(Collider other){
@@ -54,6 +59,8 @@ public class PlayerAttack : MonoBehaviour {
 	void ComboChain() {
 
 		timer = 0f;
+		combatAudio.clip = swingClip;
+		combatAudio.Play ();
 
 		if ((Time.time-LastAttack) > AttackCooldown) {
 			//If the user has not attacked in 0.5s time frame, reset AttackChain

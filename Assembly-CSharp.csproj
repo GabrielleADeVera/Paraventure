@@ -92,10 +92,14 @@
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\RPG Character Animation Pack\Code\CameraControllerRPG.cs" />
+     <Compile Include="Assets\RPG Character Animation Pack\Code\RPGCharacterControllerFREE.cs" />
+     <Compile Include="Assets\RPG Character Animation Pack\Code\RPGCharacterGUI.cs" />
      <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Scripts\CameraController\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraController\CC2.cs" />
+     <Compile Include="Assets\Scripts\CameraController\Favian\CameraControllerF.cs" />
      <Compile Include="Assets\Scripts\ChangeColor.cs" />
      <Compile Include="Assets\Scripts\Combat\Attach.cs" />
      <Compile Include="Assets\Scripts\Combat\Hit.cs" />

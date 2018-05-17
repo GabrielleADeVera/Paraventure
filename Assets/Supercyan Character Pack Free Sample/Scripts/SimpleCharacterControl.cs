@@ -34,6 +34,12 @@ public class SimpleCharacterControl : MonoBehaviour {
     private bool m_isGrounded;
     private List<Collider> m_collisions = new List<Collider>();
 
+	public PlayerHealth playerHealth;
+
+	void Start(){
+		playerHealth = GetComponent<PlayerHealth> ();
+	}
+
     private void OnCollisionEnter(Collision collision)
     {
         ContactPoint[] contactPoints = collision.contacts;
@@ -88,22 +94,24 @@ public class SimpleCharacterControl : MonoBehaviour {
     }
 
 	void Update () {
-        m_animator.SetBool("Grounded", m_isGrounded);
+		if(!playerHealth.isDead){
+	        m_animator.SetBool("Grounded", m_isGrounded);
 
-        switch(m_controlMode)
-        {
-            case ControlMode.Direct:
-                DirectUpdate();
-                break;
+	        switch(m_controlMode)
+	        {
+	            case ControlMode.Direct:
+	                DirectUpdate();
+	                break;
 
-            case ControlMode.Tank:
-                TankUpdate();
-                break;
+	            case ControlMode.Tank:
+	                TankUpdate();
+	                break;
 
-            default:
-                Debug.LogError("Unsupported state");
-                break;
-        }
+	            default:
+	                Debug.LogError("Unsupported state");
+	                break;
+	        }
+		}
 
         m_wasGrounded = m_isGrounded;
     }

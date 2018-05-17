@@ -25,6 +25,9 @@ public class EnemyMove : MonoBehaviour {
 	public float moveSpeed;
 	public bool isAttacking;
 
+	bool playerDied = false;
+	GameObject player;
+
 
 	// Use this for initialization
 	void Start () {
@@ -43,6 +46,8 @@ public class EnemyMove : MonoBehaviour {
 			hasAniComp = false;
 			enemyAnimator.enabled = true;
 		}
+		player = GameObject.FindGameObjectWithTag("Player");
+
 	}
 
 	bool CheckAniClip (string clipname)
@@ -57,6 +62,9 @@ public class EnemyMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (player.GetComponent<PlayerHealth> ().isDead) {
+			playerDied = true;
+		}
 		currentHealth = colTest.currentHealth;
 		float dist = Vector3.Distance (target.position, transform.position);
 //		Debug.Log ("Distance is " + dist);
@@ -71,7 +79,7 @@ public class EnemyMove : MonoBehaviour {
 		} else {
 			enemyAnimator.SetBool ("isWalking", false);
 		}
-		if (target && currentHealth > 0 && dist < 20) {
+		if (target && currentHealth > 0 && dist < 20 && !playerDied) {
 			navComponent.SetDestination (target.position);
 //			if (enemyAnimation.enabled == true) {
 //				enemyAnimation.CrossFade ("walk", 0.4f);
