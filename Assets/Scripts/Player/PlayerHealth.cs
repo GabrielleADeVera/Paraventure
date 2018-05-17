@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-	public int startingHealth = 10;
+	public int startingHealth = 100;
 	public int currentHealth;
 
 	public Animator playerAnimator;
@@ -43,7 +43,7 @@ public class PlayerHealth : MonoBehaviour {
 		playerAudio.Play ();
 		StartCoroutine (example ());
 
-		Application.LoadLevel(1);
+//		Application.LoadLevel(1);
 
 	}
 
