@@ -1,8 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class ApplicationManager : MonoBehaviour {
+
+	public string scene;
+	private int load;
+	void Start ()
 	
+
+	public void Newgame ()
+	{
+		Debug.Log (scene);
+
+		//SceneManager.GetSceneByName (scene) = load;
+		//SceneManager.LoadScene (load);
+		
+	}//public GameObject.Scene scene;
 
 	public void Quit () 
 	{
@@ -12,4 +26,6 @@ public class ApplicationManager : MonoBehaviour {
 		Application.Quit();
 		#endif
 	}
+
+
 }
